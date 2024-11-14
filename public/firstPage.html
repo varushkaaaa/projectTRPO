@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="firstPageCss.css">
+    <title>Музыкальный Магазин</title>
+</head>
+<body>
+    <header class="header">
+       
+            
+        </div>
+        <button class="logo-button">M</button>
+        <input type="text" placeholder="Поиск">
+        <div class="buttons">
+           
+            <button onclick="navigateTo('contacts')">Контакты</button>
+            <button onclick="navigateTo('payment')">Оплата</button>
+            <button onclick="navigateTo('delivery')">Доставка</button>
+            <button onclick="navigateTo('reviews')">Отзывы</button> 
+            <button class="account-button">Account</button>
+        </div>
+    </header>
+
+    <div class="filters">
+        <button onclick="navigateToG('guitars')">Гитары</button>
+        <button onclick="navigateToG('synthesizers')">Синтезаторы</button>
+        <button onclick="navigateToG('microphones')">Микрофоны</button>
+        <button onclick="navigateToG('accessories')">Аксессуары</button>
+        <button onclick="navigateToG('drums')">Ударные</button>
+        <button onclick="navigateToG('equipment')">Оборудование</button>
+    </div>
+    <!-- Логотип -->
+    <div class="logo">
+        <h1>mShop</h1>
+    </div>
+
+    <!-- Популярные категории -->
+    
+    <div class="category-wrapper">
+        <button class="scroll-button left" onclick="scrollCategories('left')">◀</button>
+        <div class="categories">
+            <div class="category" onclick="openCategory('guitars')">
+                <img src="images/guitar.png" alt="Электрогитары и бас">
+                <h3>Электрогитары и бас</h3>
+            </div>
+            <div class="category" onclick="openCategory('keyboards')">
+                <img src="images/keyboard.png" alt="Клавишные инструменты">
+                <h3>Клавишные инструменты</h3>
+            </div>
+            <div class="category" onclick="openCategory('microphones')">
+                <img src="images/microphone.png" alt="Микрофоны и звук">
+                <h3>Микрофоны и звук</h3>
+            </div>
+            <div class="category" onclick="openCategory('accessories')">
+                <img src="images/accessories.png" alt="Гитарные аксессуары">
+                <h3>Гитарные аксессуары</h3>
+            </div>
+            <div class="category" onclick="openCategory('drums')">
+                <img src="images/drum.png" alt="Ударные инструменты">
+                <h3>Ударные инструменты</h3>
+            </div>
+            <div class="category" onclick="openCategory('studio')">
+                <img src="images/studio.png" alt="Студийное оборудование">
+                <h3>Студийное оборудование</h3>
+            </div>
+        </div>
+        <button class="scroll-button right" onclick="scrollCategories('right')">▶</button>
+    </div>
+    
+    
+    <!-- Футер -->
+    <div class="footer">
+        <div>
+            <h4>О MShop</h4>
+            <a href="#">О нас</a><br>
+            <a href="#">Контакты</a><br>
+            <a href="#">Реквизиты</a><br>
+        </div>
+        <div>
+            <h4>Оформление заказа</h4>
+            <p>Оплата</p>
+            <p>Доставка</p>
+            <p>Безналичный расчет</p>
+        </div>
+        <div>
+            <h4>Контакты</h4>
+            <p>г. Минск, ул. Колесникова 3</p>
+            <p>+375 (17) 319-31-31</p>
+            <p>+375 (17) 319-07-29</p>
+            <p>Пн-Вс 10.00 - 20.00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

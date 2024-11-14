@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - MShop</title>
+    <link rel="stylesheet" href="firstPageCss.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>РЕГИСТРАЦИЯ</h1>
+    <div class="logoR">MShop</div>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Введите имя пользователя</label>
+        <input type="text" id="username" class="input-field" required>
+
+        <label for="password">Введите пароль</label>
+        <input type="password" id="password" class="input-field" required>
+
+        <label for="confirmPassword">Повторите пароль</label>
+        <input type="password" id="confirmPassword" class="input-field" required>
+
+        <!--<button type="submit" class="button">РЕГИСТРАЦИЯ</button>-->
+        <button class="button" onclick="main()">РЕГИСТРАЦИЯ</button>
+    </form>
+    <p id="errorMessage" class="error-message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
